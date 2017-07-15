@@ -5,9 +5,9 @@ using MvvmCross.Droid.Views;
 namespace BDF.Droid
 {
     [Activity(
-        Label = "BDF.Droid"
+        Label = "BDF"
         , MainLauncher = true
-        , Icon = "@mipmap/icon"
+        , Icon = "@mipmap/ic_launcher"
         , Theme = "@style/Theme.Splash"
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]
