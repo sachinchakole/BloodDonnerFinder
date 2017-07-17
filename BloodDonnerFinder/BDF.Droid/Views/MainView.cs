@@ -1,15 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using Android.App;
+using Android.Content;
 using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
 using MvvmCross.Droid.Views;
+using BDF.Core.ViewModels;
 
 namespace BDF.Droid.Views
 {
-    [Activity(Label = "View for MainViewModel")]
-    public class MainView : MvxActivity
+    [Activity(Label = "MainView")]
+    public class MainView : BaseView<MainViewModel> //MvxActivity
     {
-        protected override void OnCreate(Bundle bundle)
+        protected override int LayoutResorces => Resource.Layout.MainView;
+
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(bundle);
+            base.OnCreate(savedInstanceState);
+
+            // Create your application here
             SetContentView(Resource.Layout.MainView);
         }
     }

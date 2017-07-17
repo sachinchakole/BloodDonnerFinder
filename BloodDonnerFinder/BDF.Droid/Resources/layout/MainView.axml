@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        local:MvxBind="Text Text" />
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:weightSum="100"
+    android:minHeight="25px">
+    <TextView
+        android:text="Create An Account"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:layout_weight="20"
+        android:textStyle="bold"
+        android:textSize="25sp" />
     <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Reset"
-        android:textSize="40dp"
-        local:MvxBind="Click ResetTextCommand" />
+        android:text="Sign In"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/button1"
+        android:background="@android:color/holo_blue_dark" />
+    <TextView
+        android:text="Or"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:layout_weight="15"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+    <Button
+        android:text="Sign Up with Email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/button2"
+        android:background="@android:color/holo_red_light" />
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="35"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar1" />
+    </RelativeLayout>
 </LinearLayout>

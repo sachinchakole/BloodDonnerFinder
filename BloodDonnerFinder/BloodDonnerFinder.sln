@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDF.Core", "BDF.Core\BDF.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDF.Droid", "BDF.Droid\BDF.Droid.csproj", "{ECB89990-9F80-4BC8-9C78-B6652FECF40F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDF.API", "BDF.API\BDF.API.csproj", "{703203C7-7434-4107-892B-A7804A7ABB4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{ECB89990-9F80-4BC8-9C78-B6652FECF40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECB89990-9F80-4BC8-9C78-B6652FECF40F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ECB89990-9F80-4BC8-9C78-B6652FECF40F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{703203C7-7434-4107-892B-A7804A7ABB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703203C7-7434-4107-892B-A7804A7ABB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703203C7-7434-4107-892B-A7804A7ABB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703203C7-7434-4107-892B-A7804A7ABB4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
